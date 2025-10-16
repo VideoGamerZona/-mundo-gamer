@@ -82,15 +82,10 @@
   <div id="typesList" class="small"></div>
 </div>
 
-<script>
-  const allTypes = ["Acción","Arcade","Aventura","Carreras","Casual","Deporte","Disparos","Estrategia","Familia","Investigación","Lucha","Rol","Plataformas","RPG","Simulación","Terror"];
-  const typesList = document.getElementById("typesList");
-  allTypes.forEach(t => {
-    const id = `type_${t.replace(/\s+/g,'_')}`;
-    const wrapper = document.createElement("label");
-    wrapper.className = "inline";
-    wrapper.innerHTML = `<input type="checkbox" value="${t}" id
-
+   <div class="filter-group">
+          <h3>Género</h3>
+          <div id="typesList" class="small"></div>
+        </div>
 
         <div class="filter-group">
           <h3>Duración (horas)</h3>
